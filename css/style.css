@@ -1,0 +1,1041 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.header {
+    width: 100%;
+    height: 55px;
+    background-color: rgb(119, 16, 105);
+    top: 0;
+    left: 0;
+    opacity: .8;
+    position: absolute;
+    z-index: 1000;
+    position: fixed;
+    overflow: auto;
+
+}
+
+.img1 {
+    height: 55px;
+    margin-left: 100px;
+}
+
+.list1 {
+    float: right;
+    margin-right: 100px;
+}
+
+.list1 li {
+    list-style: none;
+    display: inline-block;
+    font-size: 25px;
+    margin-left: 15px;
+    margin-top: 10px;
+
+}
+
+.list1 li a {
+    color: whitesmoke;
+    text-decoration: none;
+
+}
+.list1 a:hover{
+    text-decoration: underline;
+}
+
+.div2 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/campnoue.jpg);
+    background-size: cover;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.home-content {
+    text-align: center;
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.home-content h1 {
+    font-size: 50px;
+    color: white;
+    text-transform: capitalize;
+    word-spacing: 5px;
+    font-weight: 900;
+}
+
+.p1 {
+    font-size: 20px;
+    color: white;
+    word-spacing: 5px;
+    font-weight: bolder;
+}
+
+.home-content button {
+    width: 100px;
+    padding: 10px 0px;
+    border-radius: 10px;
+}
+
+.bt1 {
+    background-color: #fdc52c;
+    border: none;
+}
+.bt2{
+    border: none;
+}
+
+.bt1:hover {
+    background-color: #cd122d;
+    color: white;
+}
+
+.bt2:hover {
+    background-color:#24234c;
+    color: white;
+
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+.FC-Barcelona-content {
+    width: 100%;
+
+}
+
+
+.FCB {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.line {
+    width: 80px;
+    height: 5px;
+    background-color: #6c2b5a;
+    margin: auto;
+    margin-top: 15px;
+
+}
+
+.FC-Barcelona-contaner {
+    width: 80%;
+    height: 300px;
+    margin: auto;
+    margin-top: 100px;
+
+
+}
+
+.barca-p {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 10px;
+    color: rgb(175, 173, 173);
+}
+
+.FC-Barcelona-sports a {
+    text-decoration: none;
+    font-size: 20px;
+    padding-top: 50px;
+    display: block;
+
+
+}
+
+
+.FC-Barcelona-sports {
+    float: left;
+    width: 30%;
+    height: 250px;
+    border: black solid 2px;
+    text-align: center;
+    position: relative;
+
+
+}
+
+.basket {
+    margin: 0px 5%;
+}
+
+.FC-Barcelona-sports i {
+    color: rgb(119, 16, 105);
+    font-size: 40PX;
+    padding-top: 20px;
+
+}
+
+.FC-Barcelona-sports:after {
+    position: absolute;
+    content: "";
+
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: -1;
+}
+
+.FC-Barcelona-sports:hover:after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    transition: .5s;
+    color: rgb(29, 21, 21);
+}
+
+.FC-Barcelona-sports:hover {
+    color: rgb(255, 255, 255);
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////////// */
+
+.contaner-player {
+    width: 100%;
+    height: 900px;
+    background-color: #24234c;
+
+
+}
+
+.playerh2 {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 30px;
+    color: white;
+
+}
+
+.line2 {
+    width: 80px;
+    height: 5px;
+    background-color: #6c2b5a;
+    margin: auto;
+
+}
+
+.contant-player-itm {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    margin-left: 245px;
+    overflow: auto;
+    
+
+
+
+}
+
+.player {
+    width: 25%;
+    height: 300px;
+    border: black solid 2px;
+    float: left;
+    margin: auto;
+    position: relative;
+    margin: 30px 20px;
+
+}
+
+.player-inf {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+
+
+}
+
+.player-inf h2,
+p,
+i {
+    color: rgb(238, 236, 236);
+    margin-top: 10px;
+}
+
+.content-hidden {
+    font-size: 20px;
+    margin-top: 100px;
+    letter-spacing: 2px;
+
+}
+
+.player:hover .player-inf {
+    visibility: visible;
+    opacity: 1;
+
+}
+
+/* ///////////////////////////////////////////////////////////////////////// */
+
+.Tickets-offer {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.Tickets-offer-contaner {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.Tickets-offer-content {
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+
+}
+
+.FC-Barcelona-Ticket {
+    float: left;
+    width: 30%;
+    height: 150px;
+    border: black solid 2px;
+    margin-bottom: 30px;
+    position: relative;
+
+
+}
+
+.fa-brands {
+    background-color: #000;
+    font-size: 20px;
+
+}
+
+.FC-Barcelona-Ticket .ticketh2,
+.ticket-p,
+.ticketi {
+    text-align: center;
+}
+
+.ticket {
+    margin: 0 5%;
+}
+
+.ticketi {
+    color: rgb(119, 16, 105);
+    font-size: 40PX;
+    margin-left: 20PX;
+
+}
+
+.ticketh2 {
+    margin-bottom: 15px;
+}
+
+.ticket-p {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: rgb(175, 173, 173);
+
+}
+
+.FC-Barcelona-Ticket:after {
+    position: absolute;
+    content: "";
+
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+
+
+}
+
+.FC-Barcelona-Ticket:hover:after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    transition: .5s;
+    color: rgb(12, 11, 11);
+}
+
+.FC-Barcelona-Ticket:hover {
+    color: white;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.choose-contaner {
+    width: 100%;
+    background-color: #24234c;
+    margin-top: 100px;
+
+}
+
+.choose-content {
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+
+}
+
+.choose-itm1 {
+    width: 50%;
+    float: left;
+}
+
+.choose-1 {
+    padding-top: 50px;
+
+}
+
+.choose-h2 {
+    color: #fdc52c;
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 9px;
+    margin-top: 6px;
+}
+
+.choose-line {
+    display: block;
+    width: 62px;
+    height: 4px;
+    background-color: #6c2b5a;
+}
+
+.choose-p {
+    color: white;
+    font-size: 18px;
+    text-transform: capitalize;
+    word-spacing: 3px;
+    margin: 40px 0px;
+}
+
+.choose-ul {
+    list-style: none;
+    margin-top: 60px;
+
+}
+
+.span-i {
+    color: white;
+    font-size: 20px;
+}
+
+.choose-itm2 {
+    width: 50%;
+    float: left;
+    margin: 50px 0px;
+}
+
+.choose-ul2 {
+    list-style: none;
+    margin-left: 182px;
+
+}
+
+.choose-ul2 li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+}
+
+.choose-ul2 .active {
+    background-color: #fdc52c;
+}
+
+.choose-ul2 li:hover {
+    background-color: #fdc52c;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.contaner-champion {
+    margin-top: 100px;
+    width: 100%;
+    background-image: url(../images/صور-شعار-برشلونه-جديدة-11.jpg);
+    height: 350px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.contant-chapion {
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+}
+
+.champion-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.champion-i {
+    width: 25%;
+    float: left;
+    padding-top: 130px;
+    text-align: center;
+
+}
+
+.champion-i .champion-h3 {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.champion-span {
+    color: white;
+    font-size: 30px;
+}
+
+.champion-icon {
+    font-size: 35px;
+    color: #fdc52c;
+    margin-bottom: 15px;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.contaner-price {
+    width: 100%;
+    margin-top: 100px;
+    background-image: url(../images/fan-comments-background.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.Pricing-table {
+    padding-top: 100px;
+    text-align: center;
+    color: white;
+
+}
+
+.contant-price {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    overflow: auto;
+}
+
+.pricing-h1 {
+    margin-top: 5px;
+}
+
+.pricing {
+    width: 25%;
+    color: white;
+    border: solid 2px;
+    text-align: center;
+    float: left;
+    margin: 0 4%;
+    margin-bottom: 40px;
+    position: relative;
+
+
+
+}
+
+.pricing-circle {
+    border: 1px solid white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 10px;
+
+}
+
+.money {
+    margin-top: 33px;
+    font-size: 30px;
+
+}
+
+.pricing-bt {
+    color: black;
+    width: 200;
+    height: 45;
+    background-color: #fdc52c;
+    border-radius: 10px;
+    border: none;
+    margin: 20px 0px;
+    z-index: 2;
+
+}
+
+.pricing-p {
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+    
+}
+
+.pricing::after {
+    position: absolute;
+    content: "";
+
+    width: 100%;
+    height: 0;
+    
+    top: 0;
+    left: 0;
+    background-color: #0b0c0c;
+    transition: .5s;
+    opacity: .2;
+    /* z-index: -1; */
+    
+}
+
+.pricing:hover::after {
+    width: 100%;
+    height: 100%;
+    
+
+}
+
+.pricing:hover {
+    color: #fdc52c;
+
+}
+
+/* ///////////////////////////////////////////////////////////////////////////// */
+
+.contaner-ground {
+    width: 100%;
+    margin-top: 100px;
+    background-image: url(../images/VO170912A02411.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contant-ground {
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+
+}
+
+.ground-overlay {
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.ground-itm-1 {
+    width: 50%;
+    float: left;
+    position: relative;
+
+}
+
+.ground-img {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    border-radius: 50%;
+
+}
+
+.ground-image {
+
+    top: 50px;
+    left: 50px;
+    border-radius: 50%;
+    margin-top: 130px;
+
+}
+
+.ground-title {
+    color: #fdc52c;
+    padding-left: 150px;
+    padding-top: 200px;
+}
+
+.ground-p {
+    font-size: 16px;
+    text-transform: capitalize;
+    padding-top: 50px;
+    padding-bottom: 90px;
+    padding-left: 55px;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.contaner-ourteam {
+    width: 100%;
+    background-color: #24234c;
+    margin-top: 100px;
+}
+
+.contant-ourteam {
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    Padding-bottom: 100PX;
+    overflow: auto;
+
+}
+
+.ourteam2 {
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+
+}
+
+.team-itm {
+    width: 25%;
+    border: solid black 2px;
+    background-color: gray;
+    text-align: center;
+    float: left;
+    margin-left: 6.5%;
+    padding-bottom: 20px;
+    position: relative;
+
+
+}
+
+
+
+.team-img {
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+.team-images {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.team-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .2);
+    visibility: hidden;
+    opacity: 0;
+    margin-top: 20px;
+}
+
+.team-itm:hover .team-overlay {
+    visibility: visible;
+    opacity: 1;
+
+}
+
+.team-overlay a {
+    display: block;
+    width: 45px;
+    height: 45px;
+    background-color: #6c2b5a;
+    color: white;
+    margin-left: auto;
+
+}
+
+.team-overlay a i {
+    line-height: 40px;
+}
+
+.team-inf {
+    text-transform: capitalize;
+    font-size: 20px;
+    color: #fdc52c;
+    margin: 10px 0;
+}
+
+.team-span {
+    text-transform: capitalize;
+    font-size: 25px;
+    margin-top: 10px;
+
+}
+
+.team-itm::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #0b0c0c;
+    transition: 1s;
+    opacity: .2;
+
+
+}
+
+.team-itm:hover::after {
+    width: 100%;
+    height: 100%;
+
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////  */
+
+.contaner-barca-news {
+    width: 100%;
+
+}
+
+.barcanews {
+
+    text-align: center;
+    margin-top: 100px;
+
+}
+
+.news-contant {
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    overflow: auto;
+    margin-bottom: 30px;
+
+
+}
+
+.barca-news {
+    width: 30%;
+    /* border: solid black 1px; */
+    text-align: center;
+    /* background-color: #24234c; */
+    float: left;
+    margin-left: 3%;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.news-img {
+    width: 100%;
+}
+
+.ul4 {
+    list-style: none;
+    margin: 20px 0;
+
+}
+
+.news-info li {
+    display: inline-block;
+
+}
+
+.news-info i {
+    font-size: 15px;
+    color:#b03e9c;
+
+}
+
+.h3-messi {
+    font-size: 30px;
+    color: black;
+    text-transform: capitalize;
+}
+
+.p-messi {
+    font-size: 15px;
+    color: black;
+    text-transform: capitalize;
+    margin: 20px 0;
+}
+
+.a-news {
+    text-decoration: none;
+    color: #24234c;
+    padding-bottom: 20px;
+
+}
+
+.barca-news::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #0b0c0c;
+    transition: 1s;
+    opacity: .4;
+
+
+}
+
+.barca-news:hover::after {
+    width: 100%;
+    height: 100%;
+
+
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.contaner-footer {
+    width: 100%;
+    background-color: #24234c;
+}
+
+.footer {
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+}
+
+.footr-link {
+    width: 39%;
+    margin: auto;
+    overflow: auto;
+    margin-top: 40px;
+}
+
+.link1 {
+    width: 110px;
+    height: 80px;
+    border: solid black 1px;
+    background-color: #3b5998;
+    float: left;
+    margin-left: 1%;
+    text-align: center;
+}
+
+.link1 i {
+    font-size: 30px;
+
+}
+
+.link1 a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.span {
+    text-align: center;
+}
+
+.tw {
+    background-color: #55acee;
+}
+
+.inst {
+    background-color: #b03e9c;
+}
+
+.youtube {
+    background-color: #bb0000;
+}
+
+.spo {
+    background-color: #00d365;
+}
+
+.list-every {
+    width: 99%;
+    overflow: auto;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+
+.every {
+    width: 14%;
+    float: left;
+
+}
+
+.every-h2 {
+    color: #fdc52c;
+}
+
+.every a {
+    text-decoration: none;
+    color: rgb(219, 211, 211);
+}
+
+.every a:hover {
+    text-decoration: underline;
+}
+
+.every ul {
+    list-style: none;
+
+}
+
+.every ul li {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.icon {
+    width: 10px;
+    height: 100px;
+    margin-left: 20px;
+}
+
+.icon-p {
+    color: white;
+    font-size: 20px;
+    margin-left: 40px;
+
+}
+
+.icon-img {
+    margin-left: 80px;
+}
+
+.copy {
+    width: 100%;
+    text-align: center;
+    color: rgb(196, 189, 189);
+    padding-bottom: 20px;
+}
+
+.copy .copy-span {
+    color: rgb(220, 215, 215);
+    font-weight: bold;
+
+}
